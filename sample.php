@@ -43,7 +43,7 @@ class Sample
     
     protected function something()
     {
-        //protected and public methods are not required to have DocComments.
+        //protected and private methods are not required to have DocComments.
     }
     
 }
