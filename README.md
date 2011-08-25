@@ -1,6 +1,6 @@
 ***This is a work in progress. Things will change.***
 
-Based on: http://symfony.com/doc/2.0/contributing/code/standards.html (but different!)
+Based on http://symfony.com/doc/2.0/contributing/code/standards.html but a little more minimalistic. 
 
 1. Full <?php opening tags and no closing tag at all for class and standard PHP-only files.
 2. Echoing is allowed using <?= syntax.
