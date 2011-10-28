@@ -1,6 +1,6 @@
 ***This is a work in progress. Things will change.***
 
-Based on http://symfony.com/doc/2.0/contributing/code/standards.html but a little more minimalistic. 
+Loosely based on http://symfony.com/doc/2.0/contributing/code/standards.html and PEAR standards.
 
 1. Full <?php opening tags and no closing tag at all for class and standard PHP-only files.
 2. Echoing is allowed using <?= syntax.
@@ -8,7 +8,7 @@ Based on http://symfony.com/doc/2.0/contributing/code/standards.html but a littl
 4. Single space after commas everywhere.
 5. No spaces after opening or before closing parenthesis.
 6. Single spaces around operators.
-7. Braces are optional for single-line statements, but a line break is mandatory.
+7. Braces are forbidden for single-line statements. A line break after the one-line block is mandatory.
 8. Opening and closing braces for classes and methods are on a new line. 
 9. Opening braces for control structures (if, while, etc) are on the same line, separated by a single space.
 10. PHP keywords are lowercase. (null, true, false, array, etc...)
@@ -23,12 +23,14 @@ Based on http://symfony.com/doc/2.0/contributing/code/standards.html but a littl
   6. Methods alphabetically (public, protected, private).
 14. Name everything inside a class using camelCase.
 15. Name everything outside a class using underscore_separated.
-16. Use dockblocks only when needed.
+16. Avoid getters and setters.
+17. Use dockblocks only when needed.
   1. Getters and setters doesn't need dockblocks. Make them self-descriptive.
   2. Constructors and Destructors doesn't need dockblocks. Make its parameters self-descriptive.
   3. Private and protected methods doesn't need dockblocks. Make them descriptive or velociraptors will come for you.
-17. Type-hint everything you can. Untyped parameters must be flexible enough to handle whatever the user inputs (converting them or throwing exceptions).
-18. Turn instances obvious inside methods.
+18. Type-hint everything you can. 
+  1. Untyped parameters must be considered "mixed" always and handle type casting if appropriate.
+  2. Pass-only parameters must be preferable not altered.
 19. Use naming conventions for common operations:
   1. get() or getXXX()
   2. set() or setXXX()
@@ -42,13 +44,3 @@ Based on http://symfony.com/doc/2.0/contributing/code/standards.html but a littl
   10. register() or registerXXX()
   11. count() or countXXX()
   12. keys()
-
-
-
-
-
-
-
-
-
-
