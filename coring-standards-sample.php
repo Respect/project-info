@@ -9,7 +9,7 @@ class Sample
 {
     const A_SAMPLE_CONSTANT = 'val';
     
-    /** @var Respect\AnotherPackage\SomeClass */
+    /** @var \Respect\AnotherPackage\SomeClass */
     public $barBaz;
     /** @var string */
     public $fooBar;
